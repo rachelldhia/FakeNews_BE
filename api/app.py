@@ -141,7 +141,6 @@ def predict():
 
 
 if __name__ == '__main__':
-    # Baca PORT dari environment Railway secara dinamis
-    port = int(os.environ.get("PORT", 5001))
+    port = 5001
     logger.info(f"Starting server on port {port}")
     app.run(host='0.0.0.0', port=port, debug=False)
