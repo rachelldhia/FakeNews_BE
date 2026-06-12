@@ -14,8 +14,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Menyalin seluruh file proyek (data, models, src, api) ke dalam container
 COPY . .
 
-# Memberitahu Docker bahwa container ini menggunakan port 5001
-EXPOSE 5001
 
 # Perintah yang dijalankan saat container menyala
 CMD ["python", "api/app.py"]
