@@ -1,5 +1,5 @@
 # Menggunakan image Python versi slim agar ukurannya kecil dan efisien (Optimized)
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Menentukan direktori kerja di dalam container
 WORKDIR /app
