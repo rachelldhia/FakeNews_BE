@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  fake-news-api:
+    build: .
+    container_name: fake-news-mlops-container
+    ports:
+      # Memetakan port komputer (5001) ke port container (5001)
+      - "5001:5001"
+    environment:
+      - FLASK_ENV=production
+    restart: unless-stopped
