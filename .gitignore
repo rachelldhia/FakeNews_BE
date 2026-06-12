@@ -36,3 +36,5 @@ env/
 # Environment variables
 .env
 .env.local
+data/Fake.csv
+data/True.csv
